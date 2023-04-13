@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from'./components/Nav'
+import Home from './views/Home'
+import Characters from './views/Characters'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+
+export default class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      age: 101
+    }
+  }
+
+  addOne = () => {
+    console.log('button clicked')
+    this.setState({
+      age: this.state.age + 1
+    })
+  }
+  
+  render() {
+    return (
+      <BrowserRouter>
+        <div>
+          <Nav/>
+          <Routes>
+            <Route path='/' element={<Home age={this.state.age} addOne={this.addOne}/>}/>
+            <Route path='/characters' element={<Characters/>}/>
+          </Routes>
+        </div>
+      </BrowserRouter>
+    )
+  }
 }
 
-export default App;
+

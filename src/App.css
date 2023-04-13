@@ -36,3 +36,76 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-image: url('https://wallpaper.dog/large/5011.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home{
+  color: white;
+  font-size: x-large;
+  font-family: cursive;
+  margin: 20px;
+}
+
+.characters{
+  color: white;
+  font-size: x-large;
+  font-family: cursive;
+  margin: 20px;
+}
+
+.spells{
+  color: white;
+  font-size: x-large;
+  font-family: cursive;
+  margin: 20px
+}
+
+.army{
+  color: white;
+  font-size: x-large;
+  font-family: cursive;
+  margin: 20px
+}
+
+.title{
+  color: rgba(255, 217, 0, 0.66);
+  text-align: center;
+}
+
+.bar{
+  border-style: solid;
+}
+
+.login{
+  color: white;
+  font-size: large;
+  font-family: cursive;
+  margin: 20px;
+  width: 85px;
+  height: 45px;
+  border-radius: 25px;
+  background-color: rgba(202, 165, 32, 0.69);
+}
+
+.register{
+  width: 200px;
+  height: 45px;
+  color: white;
+  font-size: large;
+  font-family: cursive;
+  border-radius: 25px;
+  background-color: rgba(202, 165, 32, 0.69);
+}
+
+.characterss{
+  text-align: center;
+}
+
+
+
